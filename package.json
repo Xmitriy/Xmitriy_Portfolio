@@ -2,6 +2,7 @@
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
+    "start": "serve dist",
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
     "prod": "git switch prod; git merge main; git push; git switch main",
@@ -30,7 +31,8 @@
     "webpack": "^5.42.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.27.1"
